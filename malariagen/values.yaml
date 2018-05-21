@@ -1,0 +1,26 @@
+# configuration values
+rbac:
+  enabled: true
+
+
+# Dependency configuration values
+# -------------------------------
+# To configure dependencies you must create a key with the name of the dependency
+# and then configure as per the dependent chart's values.yaml. Don't forget to indent!
+
+jupyterhub:
+  # Helm config for jupyterhub goes here
+  # See https://github.com/jupyterhub/zero-to-jupyterhub-k8s/blob/master/jupyterhub/values.yaml
+
+  singleuser:
+    image:
+      name: gcr.io/malariagen-jupyterhub/jhub-test
+      tag: May-2018
+    cpu:
+      limit: 2
+      guarantee: 1
+    memory:
+      limit: 4G
+      guarantee: 2G
+    defaultUrl: "/lab"
+    serviceAccountName: daskkubernetes

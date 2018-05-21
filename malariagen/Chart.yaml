@@ -1,0 +1,7 @@
+apiVersion: v1
+description: Malariagen jupyterhub
+maintainers:
+- email: googlecloud@malariagen.net
+  name: kristofk
+name: malariagen
+version: v0.0.0-1
