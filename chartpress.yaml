@@ -1,0 +1,10 @@
+charts:
+  - name: malariagen
+    imagePrefix: malariagen/
+    repo:
+      git: slejdops/helm-charts 
+      published: https://slejdops.github.io/helm-charts/ 
+    images:
+      notebook:
+        contextPath: docker-images/notebook
+        valuesPath: jupyterhub.singleuser.image
