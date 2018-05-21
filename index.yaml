@@ -10,6 +10,6 @@ entries:
       name: kristofk
     name: malariagen
     urls:
-    - malariagen-v0.0.0-1.tgz
+    - https://slejdops.github.io/helm-charts/malariagen-v0.0.0-1.tgz
     version: v0.0.0-1
 generated: 2018-05-18T15:16:11.851577626+01:00
