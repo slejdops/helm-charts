@@ -16,4 +16,12 @@ deploy:
   on:
     branch:
     - master
+after_success:
+  - |
 
+       $(npm bin)/set-up-ssh --key "encrypted_499b71e625dc_key" \
+                             --iv "encrypted_499b71e625dc_iv" \
+                             --path-encrypted-key "github_deploy_key.enc"
+env:
+  global:
+    - secure: "yLMHI3nIIoqjOi+NjMNTSipdsFdCvwLKBjL8jHarxR2i/Ul7U9w13I/68EIpUYWO89Ky6yOma23Wd+Mf+BMy0qfOJRvZzl7p99wmdiBMI2O965OGFBxtp5y/01pyI6pNwvtwofRrLKFizUVXjhdagy9uJwnfEKN7JCL1lbdeQN7w92D+Ugfas6e6XRuRre4vsAeQLXZ13eY6AlFW1VrPnkTKFo7w35JKETASSquJdQzPkNC8AYkO+uCzGu6gvh5tHHMSyMlxrurIXProHImxpzmdCRy15F2swMLYXcNfCAgcihdVv/Mp5IbeeH97PfMrCDRaRwYP2vV7pzmZ7AAfpG5qGEHVuPNi7M39nV0jFU7KVMP3w+1HFWk0HnqoC9sLkbgj6b5Q8WKiECA9rr8QgSBF3o+k08CNXYyWk8VwgdD2QbLWwztUEazDxkuE1obGgcBnXVUciguClfYSsxIGe/cqP5zAAod1rcToHYB1NOvZionWIf3Mt0XtlDOe8uynFgENQiTtKPe9Fmfw5A8bXFMzZ4Mt1zuyGYqz9zOPI/2LejjOhnJbs/aEoTrO+Rp7Z7wbPLRi880Tn9kYmSOxGE4JBi8i+6PdMYPXsxn9Ib8on8AzRS9DTMcDhw3ET11eM+rsN6QwOpc7NgGVn2mBV/fPGcXH8GHPvhr5/HVjjqU="
