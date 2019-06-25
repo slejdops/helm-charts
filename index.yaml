@@ -13,6 +13,17 @@ entries:
     - https://slejdops.github.io/helm-charts/malariagen-v0.0.0-b0903f1.tgz
     version: v0.0.0-b0903f1
   - apiVersion: v1
+    created: "2019-06-25T13:40:41.742410283Z"
+    description: Malariagen jupyterhub
+    digest: d0baa2a1c6e411648d33f127c7639e49fd0b187d166177813bf9166e0324f6c4
+    maintainers:
+    - email: googlecloud@malariagen.net
+      name: kristofk
+    name: malariagen
+    urls:
+    - https://slejdops.github.io/helm-charts/malariagen-v0.0.0-acc6452.tgz
+    version: v0.0.0-acc6452
+  - apiVersion: v1
     created: "2018-06-02T07:06:03.738229405+01:00"
     description: Malariagen jupyterhub
     digest: 524099f36fb0e8abafe06c3c619886883a4a484dff78e1aedb8fcae12388b206
@@ -34,4 +45,4 @@ entries:
     urls:
     - https://slejdops.github.io/helm-charts/malariagen-v0.0.0-1.tgz
     version: v0.0.0-1
-generated: "2019-06-25T13:37:39.00303451Z"
+generated: "2019-06-25T13:40:41.737899903Z"
