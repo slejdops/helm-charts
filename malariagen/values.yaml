@@ -14,8 +14,8 @@ jupyterhub:
 
   singleuser:
     image:
-      name: gcr.io/malariagen-jupyterhub/jhub-test
-      tag: May-2018
+      name: malariagen/datalab
+      tag: dev-0.1.178
     cpu:
       limit: 2
       guarantee: 1
